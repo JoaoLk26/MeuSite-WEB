@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="icon" href="images\memory_icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images\memory_icon.jpg" height="80px" width="80px" alt="Ícone do jogo da memória">
+        <h1 class="title">MEMORY GAME</h1>
+    </header>
+    <main>
+        <h1 id="selection">SELEÇÃO</h1>
+        <div class="container">
+            <a href="capivara.html" target="_blank" aria-label="Jogo da memória de Capivaras" onmouseover="selection('Capivara')" onmouseleave="hide()">
+                <img class="card" id="Capivara" src="images/images.capivaracapa.jpg" alt="Imagem das Capivaras" height="270px" width="240px">
+            </a>
+            <a href="macaco.html" target="_blank" aria-label="Jogo da memória de Macacos" onmouseover="selection('Macaco')" onmouseleave="hide()">
+                <img class="card" id="Macaco" src="images/images.macacocapa.jpg" alt="Imagem dos Macacos" height="270px" width="240px">
+            </a>
+            <a href="urso.html" target="_blank" aria-label="Jogo da memória de Ursos" onmouseover="selection('Urso')" onmouseleave="hide()">
+                <img class="card" id="Urso" src="images/images.ursocapa.jpg" alt="Imagem dos Ursos" height="270px" width="240px">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">Desenvolvido por João Victor L</p>
+    </footer>
+    <script type="text/javascript">
+        function selection(selection) {
+            const text = document.querySelector('#selection');
+            text.style.setProperty('visibility', 'visible');
+            text.innerHTML = selection;
+        }
+
+        function hide() {
+            const text = document.querySelector('#selection');
+            text.style.setProperty('visibility', 'hidden');
+        }
+    </script>
+</body>
+</html>
