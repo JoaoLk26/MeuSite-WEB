@@ -5,18 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-    <body>
-    <div class="container">
-        <h1>Portfólio - João Semanas</h1>
-        <p>Atividades - GIL</p>
+<body>
+    <!-- Menu Hambúrguer -->
+    <div class="menu-toggle" id="menuToggle">
+        ☰
+    </div>
+
+    <!-- Menu lateral com as atividades -->
+    <nav class="sidebar" id="sidebar">
         <ul class="activities">
-            <li><a href="Atividades\atividade1\index1.html">Atividade 1</a></li>
-            <br>
-            <li><a href="Atividades\atividade2\index.html">Atividade 2</a></li>
-            <br>
+            <li><a href="Atividades/atividade1/index1.html">Atividade 1</a></li>
+            <li><a href="Atividades/atividade2/index.html">Atividade 2</a></li>
             <li><a href="Atividades/atividade3/index.html">Atividade 3</a></li>
         </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Imagem Circular -->
+        <div class="profile-pic">
+            <img src="imagem_perfil-site.png" alt="Sua foto" />
+        </div>
+
+        <!-- Links sociais -->
+        <div class="social-links">
+            <a href="https://github.com/JoaoLK26" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+            </a>
+            <a href="mailto:jv.loukachak@gmail.com">
+                <span class="material-icons" style="font-size: 36px; color: white;">mail</span>
+            </a>
+        </div>
+
+        <h1>João Semanas</h1>
     </div>
+
+    <script>
+        // Script para alternar o menu lateral
+        const toggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        toggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
