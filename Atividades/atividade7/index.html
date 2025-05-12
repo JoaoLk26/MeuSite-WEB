@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Invaders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+    <div id="hud">
+      <img src="img/clock.png" class="icon" />
+      <div id="timer">00:00:00</div>
+      <div class="status">
+        <img src="img/nave.png" class="icon" />
+        LIFE: <span id="life">3</span>
+      </div>
+      <div class="status">
+        <img src="img/alien.png" class="icon" />
+        ALIEN: <span id="score">0</span>
+      </div>
+    </div>
+
+    <div id="paused">GAME PAUSED</div>
+    <div id="player"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
